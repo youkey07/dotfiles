@@ -1,0 +1,42 @@
+" vimrc
+set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,cp932,euc-jp
+set fileformats=unix,dos
+set title
+set number
+set noswapfile
+set nobackup
+set expandtab
+set smartindent
+set tabstop=2
+set softtabstop=2
+set termguicolors
+set rtp+=/usr/local/opt/fzf
+
+" keybingings
+noremap <silent> <C-l> $
+noremap <silent> <C-h> 0
+nnoremap <silent> zf :FZF .<cr>
+tnoremap <ESC> <C-[>
+
+" filetype indent
+augroup fileTypeIndent
+    autocmd!
+    " python
+    autocmd BufNewFile,BufRead *.py   setlocal tabstop=4 softtabstop=4 shiftwidth=4
+    " ruby
+    autocmd BufNewFile,BufRead *.rb   setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    autocmd BufNewFile,BufRead *.erb  setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    " java
+    autocmd BufNewFile,BufRead *.java setlocal tabstop=4 softtabstop=4 shiftwidth=4
+    " html
+    autocmd BufNewFile,BufRead *.html setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    " css
+    autocmd BufNewFile,BufRead *.css  setlocal tabstop=2 softtabstop=2 shiftwidth=2
+    " yml
+    autocmd BufNewFile,BufRead *.yml  setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
+syntax on
+filetype indent on

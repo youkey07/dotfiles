@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/neba/.ssh'
+let g:netrw_dirhist_2='/Users/neba/Workspace/QMA/qma_src/builds'
+let g:netrw_dirhist_3='/Users/neba/Workspace/Chai/ChatBotHub/server/chai_lambda/projects'
+let g:netrw_dirhist_4='/Users/neba/.oh-my-zsh'

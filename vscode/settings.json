@@ -1,0 +1,54 @@
+{
+    // window
+    "window.zoomLevel": 0,
+
+    // terminal
+    "terminal.external.osxExec": "iTerm.app",
+
+    // editor
+    "editor.suggestSelection": "first",
+    "editor.fontFamily": "Menlo, Monaco, Monaco for Powerline, 'Courier New', monospace",
+    "editor.fontSize": 12, "editor.minimap.enabled": false,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "boundary",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    // workbench
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Tomorrow Night",
+
+    // python
+    "python.jediEnabled": false,
+
+    // exclude
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+
+    // vim
+    "vim.useSystemClipboard": true,
+    "vim.easymotion": true,
+    "vim.visualstar": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "vim.incsearch": true,
+    "vim.sneak": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "explorer.confirmDragAndDrop": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDelete": false,
+}
