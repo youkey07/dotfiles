@@ -1,14 +1,6 @@
 # oh-my-zsh
 export ZSH="/Users/neba/.oh-my-zsh"
 
-# theme
-ZSH_THEME="dracula"
-
-plugins=(
-  git
-  docker
-)
-
 source $ZSH/oh-my-zsh.sh
 
 # alias
@@ -54,9 +46,12 @@ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 export PATH=$PATH:~/.nodebrew/current/bin
 
 # completion
-fpath=(~/.zsh/completion $fpath)
-zstyle ':completion:*:*:docker:*' option-stacking yes
-zstyle ':completion:*:*:docker-*:*' option-stacking yes
+if [ -e ~/.zsh/completions ]; then
+  fpath=(~/.zsh/completions $fpath)
+fi
+
+autoload -U compinit
+compinit
 
 # powerlevel9k
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme

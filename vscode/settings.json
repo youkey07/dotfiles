@@ -20,6 +20,16 @@
     // python
     "python.jediEnabled": false,
 
+    // linter
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "python.linting.lintOnSave": true,
+    "python.linting.flake8Args": [
+        "--ignore=E501,W293, W504",
+    ],
+
     // exclude
     "files.exclude": {
         "**/.git": true,
