@@ -26,21 +26,23 @@ alias gd='git diff'
 alias gs='git status'
 alias gp='git push'
 alias gb='git branch'
-alias gst='git status'
 alias gco='git checkout'
+alias gm='git merge'
 alias gf='git fetch'
 alias gc='git commit'
+alias gr='git rebase'
 # docker
 alias d='docker'
 alias dc='docker-compose'
 alias di='docker image'
 alias db='docker build'
+# kubernetes
+alias k='kubectl'
+source <(kubectl completion zsh)
 
 # pyenv
 export PYENV_ROOT=/usr/local/Cellar/pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bash_profile
 
 # node
 export PATH=$PATH:~/.nodebrew/current/bin
